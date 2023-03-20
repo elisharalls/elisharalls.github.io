@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width,minimun-scale=1,initial-scale=1.0, shrink-to-fit=no"/>
+      <title>Elisha Ralls</title>
+      <meta name="desciption" content="Elisha Ralls. Website Developer, Wordpress Developer, Developer based in Exeter England UK."/>
+      <link rel="stylesheet" href="homepage.css">
+      <script src="repeat.min.js"></script>
+  </head>
+
+  <header>
+    <div class="row"> 
+    <div class="col-12" id="nav" role="navigation">
+      <img src="file:///Users/elisharalls/Desktop/BUTTERFLYS/Scan%20112%20copy%20Background%20Removed.png">
+      <button href="#" id="contact">contact</button>
+      <button href="#" id="about">about</button>
+      <button href="#" id="projects">projects</button>
+      <button href="#" id="links">links</button>
+
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="repeat.min.js"></script>
+  <div class="row">
+    <div repeat-element="15" class="col-12"><div class="vgrid"></div></div>
+  </div>
+
+
+<div repeat-element="3" class="row">
+  <div class="col-12" id="hor-grid"></div>
+</div> 
+</header>
+
+<body>
+<div class="row">
+  <div class="col-3" id="blank"></div><!--25%-->
+  <div class="col-6" id="hello-world"><h1>Hello World!</h1></div><!--50%-->
+</div>
+
+
+<div class="row">
+
+
+</div>
+
+</div>
+</body>
+
+</html>
