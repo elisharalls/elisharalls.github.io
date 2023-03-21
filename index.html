@@ -16,6 +16,11 @@
           display: none;
         }
       }
+      @media (min-width: 992px) {
+        .hidden-desktop {
+         display: none;
+       }
+      }
     </style>
 
     <div class="row"> 
@@ -50,22 +55,30 @@
 
 <body>
 <!--star icon and heading text MOBILE + TABLET-->
-<div class="row" id="heading">
+<div class="hidden-desktop" class="row" id="heading">
   <div id="hello-world"><h1>Hello World!</h1></div>
-  <div id="icon"><img alt="star" src="/:docs/:assets/star.png"></div>
+  <div id="icon"><img alt="star icon" src="/:docs/:assets/star.png"></div>
 </div>
 
-<div class="row" id="heading">
+<div class="hidden-desktop" class="row" id="heading">
   <div><h2>I'm Elisha Ralls, <br>I create things for the web.</h2></div>
   <div id="blank"></div>
 </div>
 
-<div class="row" id="heading">
+<div class="hidden-desktop" class="row" id="heading">
   <div><p id="about">About me......</p></div>
   <div><img id="portrait" alt="portrait" src="#"></div>
   <div id="blank"></div>
 </div>
-
+<!--star icon and heading text DESKTOP-->
+<div class="row" id="heading">
+  <div class="col-3"><img id="icon" alt="star icon" src="/:docs/:assets/star.png"></div>
+  <div class="col-12"><h1>Hello World!</h1></div>
+</div>
+<div class="row" id="heading">
+  <div id="blank" class="col-3"></div>
+  <div class="col-12"><h2>I'm Elisha Ralls & I create<br>things for the web.</h2></div>
+</div>
 </body>
 
 </html>

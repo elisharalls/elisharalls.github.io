@@ -9,25 +9,6 @@
   width: 100%;
   }
 
-/* dont think this is needed, most
-phone below, tablets go way over 
->>>>>>>>>>
-@media only screen and (min-width: 600px) 
-(large phones + tablets portrait) {
-.col-t-1 {width: 8.33%;}
-.col-t-2 {width: 16.66%;}
-.col-t-3 {width: 25%;}
-.col-t-4 {width: 33.33%;}
-.col-t-5 {width: 41.66%;}
-.col-t-6 {width: 50%;}
-.col-t-7 {width: 58.33%;}
-.col-t-8 {width: 66.66%;}
-.col-t-9 {width: 75%;}
-.col-t-10 {width: 83.33%;}
-.col-t-11 {width: 91.66%;}
-.col-t-12 {width: 100%;}
-} */
-
 @media only screen and (min-width: 768px) {
   /* For tablets: */
 .col-1 {width: 8.33%;}
@@ -118,7 +99,7 @@ a {
 }
 
 /*MOBILE ONLY BURGER BAR*/
-
+@media only screen and (max-width: 768px) { /*moble*/
 .burger-menu {
   width: 60px;
   height: 60px;
@@ -128,6 +109,7 @@ a {
   display:inline-block;
   margin-left: 50%;
 }
+
 
 .ham-bar {
   width: 50%;
@@ -162,6 +144,7 @@ opacity: 0;
 .burger-menu.active .bottom {
   transform: translate(-50%, -50%) rotate(-225deg);
   top: 50%;
+}
 }
 
 @media only screen and (min-width: 768px)/*tablets*/ { 
@@ -296,17 +279,6 @@ h1 {
   letter-spacing: 0.2vh;
 }
 
-@media only screen and (min-width: 992px) {
-h1 {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-large;
-  position:sticky;
-  margin-left: 10vh;
-  align-items: flex-end;
-  }
-}
-
 h2 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -331,6 +303,33 @@ h2 {
   position: relative;
   margin-right: 3vh;
 }
+
+@media only screen and (min-width: 992px) /*desktop*/{
+  h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12vh;
+    position: relative;
+    margin-left: 10vh;
+    align-items:unset;
+    margin: 0;
+    }
+    #icon {
+      max-width: 7vh;
+      position: relative;
+      margin-left: 1vh;
+    }
+      h2 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12vh;
+        font-weight: 100;
+        letter-spacing: 0.2vh;
+        position: relative;
+        align-items: flex-end;
+        margin-top: -2vh;
+      }
+  }
 
 /*PICTURE + ABOUT ME*/
 #portrait {
