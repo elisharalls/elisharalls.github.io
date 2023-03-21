@@ -200,6 +200,9 @@ align-content: center;
 z-index: 1;
 margin-left:30%;
 }
+/*    width: 820px;
+    aspect-ratio: auto 820 / 817;
+    height: 817px;*/
 
 @media only screen and (min-width: 768px)/*tablets*/ { 
   #butterfly {
