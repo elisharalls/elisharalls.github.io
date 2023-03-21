@@ -75,7 +75,7 @@
     text-align: center; 
     align-items: center;
     height: 10%;
-    padding: 20px 30px 20px 30px;
+    padding: 10px 20px 10px 20px;
   }
 }  
 
@@ -84,6 +84,9 @@
     background-color: white;
     text-align: center; 
     align-items: center;
+    height: 16vh;
+    overflow: hidden;
+    margin: 20px 0px 20px 0px;
   }
 }
 
@@ -166,7 +169,8 @@ opacity: 0;
     background-color: none;
   }
   #icon-small {
-    max-height: 1vh;
+    max-height: 3vh;
+    min-height: 1vh;
     align-items: center;
   }
 }
@@ -200,10 +204,12 @@ margin-left:30%;
 
   @media only screen and (min-width: 992px)/*desktop*/ {
   #butterfly {
-      position: relative;
-      max-width: 5vh;
-      float: left;
+      position:unset;
+      justify-items: left;
+      min-width: 5vh;
+      max-width: 10vh;
       z-index: 1;
+      
       }
     }
   
