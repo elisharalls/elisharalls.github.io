@@ -167,7 +167,13 @@ opacity: 0;
     font-size: 5vh;
     border: none;
   }
+  #icon-small {
+    max-height: 1vh;
+    grid-row: auto;
+
+  }
 }
+
 
 button:hover {
   color: blueviolet;
@@ -315,6 +321,7 @@ h2 {
     }
     #icon {
       max-width: 14vh;
+      min-width: 10vh;
       position: relative;
       margin-left: 5vh;
       z-index: 1;
