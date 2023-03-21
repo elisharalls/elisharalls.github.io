@@ -9,7 +9,7 @@
   width: 100%;
   }
 
-/* dont this this is needed, most
+/* dont think this is needed, most
 phone below, tablets go way over 
 >>>>>>>>>>
 @media only screen and (min-width: 600px) 
@@ -67,7 +67,7 @@ phone below, tablets go way over
 }
 
 [class*="col-"] {
-  float: left;
+  float: unset;
 
 }
 
@@ -83,7 +83,7 @@ phone below, tablets go way over
   background-color: white;
   text-align: center; 
   align-items: center;
-  height: 10%;
+  height: 40px;
   padding: 20px 30px 20px 30px;
   overflow: hidden;
 }
@@ -117,6 +117,53 @@ a {
   border: none;
 }
 
+/*MOBILE ONLY BURGER BAR*/
+
+.burger-menu {
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  position: absolute;
+  cursor: pointer;
+  display:inline-block;
+  margin-left: 50%;
+}
+
+.ham-bar {
+  width: 50%;
+  height: 3px;
+  background-color: aquamarine;
+  border-radius: 15px;
+  display: inline-block;
+  position:inherit;
+  transform: translate(-50%, -50%);
+  transition: transform .6s, opacity .8s, top .6s;
+  top: 50%;
+  left: 50%;
+  margin-left: 80%;
+}
+
+.top {
+  top: 35%;
+}
+.bottom {
+  top: 65%;
+}
+
+.burger-menu.active .top {
+  transform: translate(-50%, -50%) rotate(-315deg);
+  top: 50%;
+}
+
+.burger-menu.active .mid {
+opacity: 0;
+}
+
+.burger-menu.active .bottom {
+  transform: translate(-50%, -50%) rotate(-225deg);
+  top: 50%;
+}
+
 @media only screen and (min-width: 768px)/*tablets*/ { 
   button {
     font-family: Arial, Helvetica, sans-serif;
@@ -139,22 +186,23 @@ a {
   }
 }
 
-
 button:hover {
   color: blueviolet;
 }
 
 /*<<<<BUTTERFLY IMAGE>>>>*/
 
-img /*mobile*/{
+#butterfly /*mobile*/{
+margin-top: 10%;
 position: absolute;
-max-width: 10%;
-z-index:1;
-margin-left: 0%;
+max-width: 20%;
+align-content: center;
+z-index: 1;
+margin-left:30%;
 }
 
 @media only screen and (min-width: 768px)/*tablets*/ { 
-  img {
+  #butterfly {
     position: absolute; 
     max-width: 20%;
     z-index:1;
@@ -162,7 +210,7 @@ margin-left: 0%;
   }
 
   @media only screen and (min-width: 992px)/*desktop*/ {
-    img {
+  #butterfly {
       position: absolute;
       max-width: 15%;
       z-index:1;
@@ -177,19 +225,18 @@ div {
 }
 /*<<<<GRID container>>>>*/
 .container {
-
   overflow: hidden;
 }
 
 body {
   background-color: black;
 }
-/*<<<<GRID PATTERB>>>>*/
+/*<<<<GRID PATTERN>>>>*/
 @media only screen and (max-width: 768px)/*moble*/ { 
   .vgrid {
     border-left: solid 2px white;
-    height: 15%;
-    max-height: 15%;
+    height: 10%;
+    max-height: 10%;
     min-height: 5%;
     margin-left: 2%;
     margin-right: 2%;
@@ -222,7 +269,6 @@ body {
     }
   }
 
-
 #hor-grid {
   border-bottom: solid 2px white;
   width: 100%;
@@ -232,16 +278,67 @@ body {
   max-block-size: none;
 }
 
-@media only screen and (min-width: 992px) {
+
+/*HEADING TEXT + STAR ICON*/
+#heading {
+  align-items: center;
+  margin: 0 5vh 0 5vh;
+}
+
 h1 {
-  color: blueviolet;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: xx-large;
-  position:absolute;
+  text-shadow: 2px 2px 1px aquamarine;
+  letter-spacing: 0.2vh;
+}
+
+@media only screen and (min-width: 992px) {
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  position:sticky;
+  margin-left: 10vh;
+  align-items: flex-end;
   }
 }
 
+h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: 100;
+  letter-spacing: 0.2vh;
+  position: relative;
+  align-items: flex-end;
+  margin-top: -2vh;
+}
 
+#icon {
+  max-width: 7vh;
+  position: relative;
+  margin-left: 1vh;
+}
+
+#blank {      /*needed??*/
+  float: left;
+  max-width: 7vh;
+  align-items:flex-start;
+  position: relative;
+  margin-right: 3vh;
+}
+
+/*PICTURE + ABOUT ME*/
+#portrait {
+ background-color: aqua; 
+ padding: 5vh;
+}
+
+#about {
+  color:white;
+  align-items: center;
+}
 
 /* .dropbtn {
   background-color: aquamarine;

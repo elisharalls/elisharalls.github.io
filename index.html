@@ -10,25 +10,32 @@
   </head>
 
   <header>
+    <style>
+      @media (max-width: 767px) {
+        .hidden-mobile {
+          display: none;
+        }
+      }
+    </style>
+
     <div class="row"> 
     <div class="col-12" id="nav" role="navigation">
-      <img src="file:///Users/elisharalls/Desktop/BUTTERFLYS/Scan%20112%20copy%20Background%20Removed.png">
-      <button href="#" id="contact">contact</button>
-      <button href="#" id="about">about</button>
-      <button href="#" id="projects">projects</button>
-      <button href="#" id="links">links</button>
+      <img id="butterfly" src="file:///Users/elisharalls/Desktop/BUTTERFLYS/Scan%20112%20copy%20Background%20Removed.png">
+      <button href="#" class="hidden-mobile" id="contact">contact</button>
+      <button href="#" class="hidden-mobile" id="about">about</button>
+      <button href="#" class="hidden-mobile" id="projects">projects</button>
+      <button href="#" class="hidden-mobile" id="links">links</button>
 
-      <div class="dropdown">
-        <button class="dropbtn">Dropdown<i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
+       <!--burger bar MOBILE ONLY-->
+    <div class="burger-menu active">
+     <div class="ham-bar top"></div>
+     <div class="ham-bar mid"></div>
+     <div class="ham-bar bottom"></div>
+     <script src="burgermenu.js"></script>
     </div>
-  </div>
 
+     </div>
+  </div>
 
   <script src="repeat.min.js"></script>
   <div class="row">
@@ -42,18 +49,23 @@
 </header>
 
 <body>
-<div class="row">
-  <div class="col-3" id="blank"></div><!--25%-->
-  <div class="col-6" id="hello-world"><h1>Hello World!</h1></div><!--50%-->
+<!--star icon and heading text MOBILE + TABLET-->
+<div class="row" id="heading">
+  <div id="hello-world"><h1>Hello World!</h1></div>
+  <div id="icon"><img src="file:///Users/elisharalls/Desktop/github%20web%20pages/elisharalls.github.io/Untitled-2%20copy.png"></div>
 </div>
 
-
-<div class="row">
-
-
+<div class="row" id="heading">
+  <div><h2>I'm Elisha Ralls, <br>I create things for the web.</h2></div>
+  <div id="blank"></div>
 </div>
 
+<div class="row" id="heading">
+  <div><p id="about">About me......</p></div>
+  <div><img id="portrait" src="#"></div>
+  <div id="blank"></div>
 </div>
+
 </body>
 
 </html>
