@@ -243,20 +243,20 @@ h1 {
 
 
 
-.dropbtn {
+/* .dropbtn {
   background-color: aquamarine;
   color: black;
   border: none;
   padding: 5px;
   font-size: 12px;
 }
-/* The container <div> - needed to position the dropdown content */
+/* The container <div> - needed to position the dropdown content 
 .dropdown {
 float: left;
 overflow: hidden;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Dropdown Content (Hidden by Default) 
 .dropdown-contents {
   display: none;
   position: absolute;
@@ -265,7 +265,7 @@ overflow: hidden;
   box-shadow: 0px 8px 16px 0px (0,0,0,0.2);
   z-index: 1;
 }
-/* Links inside the dropdown */
+/* Links inside the dropdown 
 .dropdown-contents a {
   float: none;
   color: black;
@@ -274,11 +274,11 @@ overflow: hidden;
   display: block;
   text-align: left;
 }
-/* Change color of dropdown links on hover*/
+/* Change color of dropdown links on hover
 .dropdown-content a:hover {background-color: #ddd;}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+/* Show the dropdown menu on hover
+.dropdown:hover .dropdown-content {display: block;} */
 
 
 
