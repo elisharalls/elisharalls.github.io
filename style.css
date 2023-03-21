@@ -82,10 +82,8 @@
 @media only screen and (min-width: 992px)/*desktop*/ {
   #nav {
     background-color: white;
-    text-align: right; 
+    text-align: center; 
     align-items: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
   }
 }
 
@@ -109,8 +107,6 @@ a {
   display:inline-block;
   margin-left: 50%;
 }
-
-
 .ham-bar {
   width: 50%;
   height: 3px;
@@ -147,6 +143,7 @@ opacity: 0;
 }
 }
 
+/*BUTTONS*/
 @media only screen and (min-width: 768px)/*tablets*/ { 
   button {
     font-family: Arial, Helvetica, sans-serif;
@@ -166,11 +163,11 @@ opacity: 0;
     color: black;
     font-size: 5vh;
     border: none;
+    background-color: none;
   }
   #icon-small {
     max-height: 1vh;
-    grid-row: auto;
-
+    align-items: center;
   }
 }
 
@@ -203,11 +200,10 @@ margin-left:30%;
 
   @media only screen and (min-width: 992px)/*desktop*/ {
   #butterfly {
-      position: absolute;
-      max-width: 15%;
-      z-index:1;
-      margin-left: -20%;
-      margin-top: -1%;
+      position: relative;
+      max-width: 5vh;
+      float: left;
+      z-index: 1;
       }
     }
   
@@ -316,15 +312,14 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12vh;
     position: relative;
-    margin-left: -5vh;
     margin: 0;
+    z-index: 1;
     }
     #icon {
       max-width: 14vh;
       min-width: 10vh;
       position: relative;
       margin-left: 5vh;
-      z-index: 1;
     }
       h2 {
         color: white;
