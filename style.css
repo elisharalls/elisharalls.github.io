@@ -170,10 +170,12 @@ opacity: 0;
     border: none;
     background-color: white;
   }
-  #small-icon {
+  .star {
     max-height: 3vh;
     min-height: 1vh;
     align-items: center;
+    overflow: hidden;
+    margin: 1vh;;
   }
 }
 
@@ -326,14 +328,14 @@ h2 {
       max-width: 14vh;
       min-width: 14vh;
       position:sticky;
-      margin-left: 5vh;
+      margin: 5vh;
     }
 
     #blank {      /*needed??*/
       max-width: 14vh;
       min-width: 14vh;
       position:sticky;
-      margin-left: 5vh;
+      margin: 5vh;
     }
 
       h2 {
