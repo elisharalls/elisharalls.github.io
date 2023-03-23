@@ -85,8 +85,9 @@
     text-align: center; 
     align-items: center;
     height: 16vh;
-    overflow: hidden;
-    margin: 20px 0px 20px 0px;
+    overflow:visible;
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 10px;
   }
 }
 
@@ -155,6 +156,7 @@ opacity: 0;
     color: black;
     font-size: 2vh;
     border: none;
+    background-color: white;
   }
 }
 
@@ -166,7 +168,7 @@ opacity: 0;
     color: black;
     font-size: 5vh;
     border: none;
-    background-color: none;
+    background-color: white;
   }
   #small-icon {
     max-height: 3vh;
@@ -204,12 +206,11 @@ margin-left:30%;
 
   @media only screen and (min-width: 992px)/*desktop*/ {
   #butterfly {
-      position:unset;
+      position:relative;
       justify-items: left;
       min-width: 5vh;
       max-width: 10vh;
       z-index: 1;
-      
       }
     }
   
@@ -323,10 +324,18 @@ h2 {
     }
     #icon {
       max-width: 14vh;
-      min-width: 10vh;
-      position: relative;
+      min-width: 14vh;
+      position:sticky;
       margin-left: 5vh;
     }
+
+    #blank {      /*needed??*/
+      max-width: 14vh;
+      min-width: 14vh;
+      position:sticky;
+      margin-left: 5vh;
+    }
+
       h2 {
         color: white;
         font-family: Arial, Helvetica, sans-serif;
