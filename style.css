@@ -161,7 +161,7 @@ opacity: 0;
   }
   .star {
     max-height: 8vh;
-    min-height: 6vh;
+    min-height: 4vh;
   }
 }
 
@@ -178,7 +178,7 @@ opacity: 0;
   }
   .star {
     max-height: 10vh;
-    min-height: 8vh;
+    min-height: 6vh;
   }
 }
 
