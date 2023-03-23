@@ -86,8 +86,7 @@
     height: 16vh;
     overflow:hidden;
     margin: 20px 10px 20px 10px;
-    padding: 20px 10px 20px 10px; /*somethings making it lot fill page*/
-    align-items: flex-start;
+    padding: 20px 10px 20px 10px; /*somethings making it not fill page*/
   }
 }
 
@@ -161,6 +160,7 @@ opacity: 0;
 }
 
 @media only screen and (min-width: 992px)/*desktop*/ {
+ 
   button {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 40%;
@@ -169,11 +169,12 @@ opacity: 0;
     font-size: 5vh;
     border: none;
     background-color: white;
+    padding-right: 5vh;
   }
   .star {
-    max-height: 3vh;
-    min-height: 1vh;
-    overflow:none;
+    max-height: fit-content;
+    min-height: fit-content;
+    overflow:hidden;
   }
 }
 
@@ -209,8 +210,8 @@ margin-left:30%;
       position:absolute;
       margin: 1vh;
       padding: 1vh;
-      min-width: 5vh;
-      max-width: 10vh;
+      min-width: 10vh;
+      max-width: 15vh;
       z-index: 1;
       }
     }
