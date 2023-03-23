@@ -160,8 +160,8 @@ opacity: 0;
     padding-right: 5vh;
   }
   .star {
-    max-height: fit-content;
-    min-height: fit-content;
+    max-height: 10vh;
+    min-height: 7vh;
     overflow: hidden;
   }
 }
@@ -178,8 +178,8 @@ opacity: 0;
     padding-right: 5vh;
   }
   .star {
-    max-height: fit-content;
-    min-height: fit-content;
+    max-height: 15vh;
+    min-height: 10vh;
     overflow:hidden;
   }
 }
@@ -208,8 +208,8 @@ margin-left:30%;
     position: absolute; 
     margin: 0vh;
     padding: 0vh;
-    min-width: 10vh;
-    max-width: 25vh;
+    min-width: 15vh;
+    max-width: 20vh;
     z-index:1;
     }
   }
@@ -219,8 +219,8 @@ margin-left:30%;
       position:absolute;
       margin: 1vh;
       padding: 1vh;
-      min-width: 10vh;
-      max-width: 15vh;
+      min-width: 20vh;
+      max-width: 25vh;
       z-index: 1;
       }
     }
@@ -325,38 +325,20 @@ h2 {
 }
 
 @media only screen and (min-width: 768px) /*tablet?*/ {
-  #heading {
-    align-items: center;
-    margin: 0 5vh 0 5vh;
-  }
   h1 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-    text-shadow: 2px 2px 1px aquamarine;
-    letter-spacing: 0.5vh;
+    font-size: 4vh;
+    margin: 0;
   }
   h2 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
-    font-weight: 100;
-    letter-spacing: 0.5vh;
-    position: relative;
-    align-items: flex-end;
-    margin-top: -2vh;
+    font-size: 4vh;
+    margin: 0;
   }
-  
-  #blank {      /*needed??*/
-    float: left;
-    max-width: 7vh;
-    align-items:flex-start;
-    position: relative;
-    margin-right: 3vh;
+  #blank, #icon {      /*needed??*/
+    max-width: 6vh;
+    min-width: 6vh;
+    margin: 1vh;
   }
 }
-
-
 
 @media only screen and (min-width: 992px) /*desktop*/{
   h1 {
