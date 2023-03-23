@@ -16,6 +16,13 @@
           display: none;
         }
       }
+
+     /* @media (min-width: 768px) (max-width: 992px) {
+      .hidden-tablet {
+      display: none;
+        }
+      }*/
+
       @media (min-width: 992px) {
         .hidden-desktop {
          display: none;
@@ -26,19 +33,19 @@
     <div class="row"> 
     <div class="col-12" id="nav" role="navigation">
 
-      <img id="butterfly" alt="butterfly-icon" src="/:docs/:assets/io-icon.png">
+      <div class="col-4"><img id="butterfly" alt="butterfly-icon" src="/:docs/:assets/io-icon.png"></div>
 
-      <div class="hidden-mobile"><img alt="star" class="star" src="/:docs/:assets/button-icon.png"></div>
-      <button href="#" class="hidden-mobile" id="projects">projects</button>
+      <div class="col-6" class="hidden-mobile"><img alt="star" class="star" src="/:docs/:assets/button-icon.png">
+      <button href="#" class="hidden-mobile" id="projects">projects</button></div>
 
-      <div class="hidden-mobile"><img alt="star" class="star" src="/:docs/:assets/button-icon.png"></div>
-      <button href="#" class="hidden-mobile" id="resumè">resumè</button>
+      <div class="col-8" class="hidden-mobile"><img alt="star" class="star" src="/:docs/:assets/button-icon.png">
+      <button href="#" class="hidden-mobile" id="resumè">resumè</button></div>
 
-      <div class="hidden-mobile"><img alt="star" class="star" src="/:docs/:assets/button-icon.png"></div>
-      <button href="#" class="hidden-mobile" id="blog">blog</button>
+      <div class="col-9" class="hidden-mobile"><img alt="star" class="star" src="/:docs/:assets/button-icon.png">
+      <button href="#" class="hidden-mobile" id="blog">blog</button></div>
 
-      <div class="hidden-mobile"><img alt="star" class="star" src="/:docs/:assets/button-icon.png"></div>
-      <button href="#" class="hidden-mobile" id="contact">contact</button>
+      <div class="col-10" class="hidden-mobile"><img alt="star" class="star" src="/:docs/:assets/button-icon.png">
+      <button href="#" class="hidden-mobile" id="contact">contact</button></div>
 
        <!--burger bar MOBILE ONLY-->
      <div class="hidden-desktop" class="burger-menu active">
@@ -81,13 +88,13 @@
 </div>
 
 <!--star icon and heading text DESKTOP-->
-<div class="row" id="heading">
-  <div class="col-3" id="icon"><img alt="icon" src="/:docs/:assets/star.png"></div>
-  <div class="col-12"><h1>Hello World!</h1></div>
+<div class="row" id="heading" class="hidden-tablet">
+  <div class="hidden-tablet" class="col-3" id="icon"><img alt="icon" src="/:docs/:assets/star.png"></div>
+  <div class="hidden-tablet" class="col-12"><h1>Hello World!</h1></div>
 </div>
-<div class="row" id="heading">
-  <div id="blank" class="col-3"></div>
-  <div class="col-12"><h2>I'm Elisha Ralls & I create<br>things for the web.</h2></div>
+<div class="row" id="heading" class="hidden-tablet">
+  <div class="hidden-tablet" id="blank" class="col-3"></div>
+  <div class="hidden-tablet" class="col-12"><h2>I'm Elisha Ralls & I create<br>things for the web.</h2></div>
 </div>
 </body>
 

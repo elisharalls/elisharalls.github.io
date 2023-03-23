@@ -83,11 +83,11 @@
   #nav {
     background-color: white;
     text-align: center; 
-    align-items: center;
     height: 16vh;
-    overflow:visible;
+    overflow:hidden;
     margin: 20px 10px 20px 10px;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px 20px 10px; /*somethings making it lot fill page*/
+    align-items: flex-start;
   }
 }
 
@@ -173,9 +173,7 @@ opacity: 0;
   .star {
     max-height: 3vh;
     min-height: 1vh;
-    align-items: center;
-    overflow: hidden;
-    margin: 1vh;;
+    overflow:none;
   }
 }
 
@@ -208,8 +206,9 @@ margin-left:30%;
 
   @media only screen and (min-width: 992px)/*desktop*/ {
   #butterfly {
-      position:relative;
-      justify-items: left;
+      position:absolute;
+      margin: 1vh;
+      padding: 1vh;
       min-width: 5vh;
       max-width: 10vh;
       z-index: 1;
@@ -325,16 +324,16 @@ h2 {
     z-index: 1;
     }
     #icon {
-      max-width: 14vh;
-      min-width: 14vh;
-      position:sticky;
+      max-width: 20vh;
+      min-width: 20vh;
+      position:relative;
       margin: 5vh;
     }
 
     #blank {      /*needed??*/
-      max-width: 14vh;
-      min-width: 14vh;
-      position:sticky;
+      max-width: 20vh;
+      min-width: 20vh;
+      position:relative;
       margin: 5vh;
     }
 
