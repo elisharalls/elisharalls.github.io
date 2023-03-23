@@ -73,8 +73,9 @@
   #nav {
     background-color: white;
     text-align: center; 
-    align-items: center;
-    height: 10%;
+    height: 8vh;
+    overflow: hidden;
+    margin: 0;
     padding: 10px 20px 10px 20px;
   }
 }  
@@ -84,9 +85,9 @@
     background-color: white;
     text-align: center; 
     height: 16vh;
-    overflow:hidden;
-    margin: 20px 10px 20px 10px;
-    padding: 20px 10px 20px 10px; /*somethings making it not fill page*/
+    overflow: hidden;
+    margin: 0;
+    padding: 20px 10px 20px 10px; 
   }
 }
 
@@ -150,17 +151,22 @@ opacity: 0;
 @media only screen and (min-width: 768px)/*tablets*/ { 
   button {
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 10%;
-    font-weight: 800;
+    letter-spacing: 20%;
+    font-weight: 500;
     color: black;
-    font-size: 2vh;
+    font-size: 100%;
     border: none;
     background-color: white;
+    padding-right: 5vh;
+  }
+  .star {
+    max-height: fit-content;
+    min-height: fit-content;
+    overflow: hidden;
   }
 }
 
 @media only screen and (min-width: 992px)/*desktop*/ {
- 
   button {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 40%;
@@ -200,7 +206,10 @@ margin-left:30%;
 @media only screen and (min-width: 768px)/*tablets*/ { 
   #butterfly {
     position: absolute; 
-    max-width: 20%;
+    margin: 0vh;
+    padding: 0vh;
+    min-width: 10vh;
+    max-width: 25vh;
     z-index:1;
     }
   }
@@ -245,12 +254,11 @@ body {
 .vgrid {
   border-left: solid 2px white;
   height: 25%;
-  max-height: 25%;
-  min-height: 15%;
+  max-height: 15%;
+  min-height: 12%;
   margin-left: 2%;
   margin-right: 2%;
-  position: absolute;
-  
+  position: absolute; 
 }
 }
 
@@ -302,7 +310,8 @@ h2 {
 }
 
 #icon {
-  max-width: 7vh;
+  min-width: 7vh;
+  max-width: fit-content;
   position: relative;
   margin-left: 1vh;
 }
@@ -314,6 +323,40 @@ h2 {
   position: relative;
   margin-right: 3vh;
 }
+
+@media only screen and (min-width: 768px) /*tablet?*/ {
+  #heading {
+    align-items: center;
+    margin: 0 5vh 0 5vh;
+  }
+  h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    text-shadow: 2px 2px 1px aquamarine;
+    letter-spacing: 0.5vh;
+  }
+  h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: 100;
+    letter-spacing: 0.5vh;
+    position: relative;
+    align-items: flex-end;
+    margin-top: -2vh;
+  }
+  
+  #blank {      /*needed??*/
+    float: left;
+    max-width: 7vh;
+    align-items:flex-start;
+    position: relative;
+    margin-right: 3vh;
+  }
+}
+
+
 
 @media only screen and (min-width: 992px) /*desktop*/{
   h1 {
