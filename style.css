@@ -161,7 +161,7 @@ opacity: 0;
   }
   .star {
     max-height: 8vh;
-    min-height: fit-content;
+    min-height: 6vh;
   }
 }
 
@@ -177,8 +177,8 @@ opacity: 0;
     padding-right: 5vh;
   }
   .star {
-    max-height: 15vh;
-    min-height: fit-content;
+    max-height: 10vh;
+    min-height: 8vh;
   }
 }
 
@@ -191,11 +191,10 @@ button:hover {
 
 #butterfly /*mobile*/{
 margin-top: 10%;
-position: absolute;
+position: relative;
+min-width: 5vh;
 max-width: 20%;
-align-content: center;
 z-index: 1;
-margin-left:30%;
 }
 /*    width: 820px;
     aspect-ratio: auto 820 / 817;
