@@ -160,9 +160,8 @@ opacity: 0;
     padding-right: 5vh;
   }
   .star {
-    max-height: 10vh;
-    min-height: 7vh;
-    overflow: hidden;
+    max-height: 8vh;
+    min-height: fit-content;
   }
 }
 
@@ -179,8 +178,7 @@ opacity: 0;
   }
   .star {
     max-height: 15vh;
-    min-height: 10vh;
-    overflow:hidden;
+    min-height: fit-content;
   }
 }
 
@@ -333,9 +331,9 @@ h2 {
     font-size: 4vh;
     margin: 0;
   }
-  #blank, #icon {      /*needed??*/
-    max-width: 6vh;
-    min-width: 6vh;
+  #blank #icon {      /*needed??*/
+    max-width: fit-content;
+    min-width: 8vh;
     margin: 1vh;
   }
 }
@@ -347,13 +345,13 @@ h2 {
     font-size: 12vh;
     position: relative;
     margin: 0;
-    z-index: 1;
     }
     #icon {
-      max-width: 20vh;
-      min-width: 20vh;
+      max-width: fit-content;
+      min-width: 10vh;
       position:relative;
       margin: 5vh;
+      z-index: 1;
     }
 
     #blank {      /*needed??*/
