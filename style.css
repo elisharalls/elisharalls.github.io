@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box; 
   max-width: 100%;
+  margin: 0;
 }
 
 
@@ -83,7 +84,7 @@
 @media only screen and (min-width: 992px)/*desktop*/ {
   #nav {
     background-color: white;
-    text-align: center; 
+    text-align: right; 
     height: 16vh;
     overflow: hidden;
     margin: 0;
@@ -96,8 +97,9 @@ a {
   letter-spacing: 10%;
   font-weight: 800;
   color: black;
-  font-size: 1vh;
+  font-size: 0.7vh;
   border: none;
+  text-align: right;
 }
 
 /*MOBILE ONLY BURGER BAR*/
@@ -171,7 +173,7 @@ opacity: 0;
     letter-spacing: 40%;
     font-weight: 500;
     color: black;
-    font-size: 5vh;
+    font-size: 4vh;
     border: none;
     background-color: white;
     padding-right: 5vh;
@@ -189,13 +191,14 @@ button:hover {
 
 /*<<<<BUTTERFLY IMAGE>>>>*/
 
-#butterfly /*mobile*/{
-margin-top: 10%;
-position: relative;
-min-width: 5vh;
-max-width: 20%;
-z-index: 1;
+#butterflymobile /*mobile*/{
+margin-left: 50%;
+margin-right: 50%;
+display: block;
+position: absolute;
+
 }
+
 /*    width: 820px;
     aspect-ratio: auto 820 / 817;
     height: 817px;*/
@@ -237,7 +240,7 @@ body {
 /*<<<<GRID PATTERN>>>>*/
 @media only screen and (max-width: 768px)/*moble*/ { 
   .vgrid {
-    border-left: solid 2px white;
+    border-left: solid 1px white;
     height: 10%;
     max-height: 10%;
     min-height: 5%;
@@ -286,7 +289,7 @@ body {
   align-items: center;
   margin: 0 5vh 0 5vh;
 }
-
+/*mobile*/
 h1 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -298,12 +301,12 @@ h1 {
 h2 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: x-large;
+  font-size: large;
   font-weight: 100;
   letter-spacing: 0.2vh;
   position: relative;
   align-items: flex-end;
-  margin-top: -2vh;
+  margin-top: 0;
 }
 
 #icon {
@@ -350,6 +353,7 @@ h2 {
       min-width: 10vh;
       position:relative;
       margin: 5vh;
+      margin-right: 2vh;
       z-index: 1;
     }
 
@@ -363,15 +367,16 @@ h2 {
       h2 {
         color: white;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12vh;
+        font-size: 8vh;
         font-weight: 100;
         letter-spacing: 0.2vh;
         align-items: flex-start;
         margin-top: -2vh;
+        margin-left: -8vh;
       }
   }
 
-/*PICTURE + ABOUT ME*/
+/* ABOUT */
 #portrait {
  background-color: aqua; 
  padding: 5vh;
