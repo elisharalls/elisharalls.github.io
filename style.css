@@ -45,7 +45,7 @@
 .row::after {
   content: "";
   clear: both;
-  display: table;
+ 
 }
 
 [class*="col-"] {
@@ -64,31 +64,32 @@
 #nav {
   background-color: white;
   text-align: center; 
-  align-items: center;
   height: 40px;
   padding: 20px 30px 20px 30px;
-  overflow: hidden;
+  
+  display: block;
+  margin: 0;
 }
 
 @media only screen and (min-width: 768px)/*tablets*/ { 
   #nav {
     background-color: white;
-    text-align: center; 
     height: 8vh;
     overflow: hidden;
-    margin: 0;
+    margin: auto;
     padding: 10px 20px 10px 20px;
+    display: block;
   }
 }  
 
 @media only screen and (min-width: 992px)/*desktop*/ {
   #nav {
     background-color: white;
-    text-align: right; 
     height: 16vh;
     overflow: hidden;
-    margin: 0;
+    margin: auto;
     padding: 20px 10px 20px 10px; 
+    text-align: right;
   }
 }
 
@@ -110,7 +111,6 @@ a {
   padding: 1rem;
   position: absolute;
   cursor: pointer;
-  display:inline-block;
   margin-left: 50%;
 }
 .ham-bar {
@@ -168,20 +168,28 @@ opacity: 0;
 }
 
 @media only screen and (min-width: 992px)/*desktop*/ {
+
   button {
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 40%;
+    letter-spacing: 50%;
     font-weight: 500;
     color: black;
-    font-size: 4vh;
+    font-size: 3.5vh;
     border: none;
     background-color: white;
     padding-right: 5vh;
   }
-  .star {
-    max-height: 10vh;
-    min-height: 6vh;
+
+  img .star {
+    max-height: 9vh;
+    min-height: 8vh;
+    margin-left: 10vh;
   }
+
+  #block {
+    margin-left: 10vh;
+  }
+
 }
 
 
@@ -192,12 +200,11 @@ button:hover {
 /*<<<<BUTTERFLY IMAGE>>>>*/
 
 #butterflymobile /*mobile*/{
-margin-left: auto;
-margin-right: auto;
-display: block;
+margin-left: 50%;
+margin-right: 50%;
 position: absolute;
-min-width: 10vh;
-max-width: 15vh;
+min-width: 7vh;
+max-width: 12vh;
 z-index: 1;
 }
 
@@ -244,7 +251,7 @@ body {
   .vgrid {
     border-left: solid 1px white;
     height: 10%;
-    max-height: 10%;
+    max-height: 25%;
     min-height: 5%;
     margin-left: 2%;
     margin-right: 2%;
@@ -256,15 +263,15 @@ body {
 .vgrid {
   border-left: solid 2px white;
   height: 25%;
-  max-height: 15%;
-  min-height: 12%;
+  max-height: 30%;
+  
   margin-left: 2%;
   margin-right: 2%;
   position: absolute; 
 }
 }
 
-  @media only screen and (min-width: 992px) /*laptop?*/ {
+  @media only screen and (min-width: 992px) /*desktop*/ {
     .vgrid {
       border-left: solid 2px white;
       height: 40%;
@@ -335,7 +342,7 @@ h2 {
     font-size: 4vh;
     margin: 0;
   }
-  #blank #icon {      /*needed??*/
+  #blank #icon {      /*needed?*/
     max-width: fit-content;
     min-width: 8vh;
     margin: 1vh;
@@ -358,8 +365,7 @@ h2 {
       margin-right: 2vh;
       z-index: 1;
     }
-
-    #blank {      /*needed??*/
+    #blank {
       max-width: 20vh;
       min-width: 20vh;
       position:relative;
@@ -369,12 +375,12 @@ h2 {
       h2 {
         color: white;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 8vh;
+        font-size: 10vh;
         font-weight: 100;
         letter-spacing: 0.2vh;
         align-items: flex-start;
         margin-top: -2vh;
-        margin-left: -8vh;
+        margin-left: -13vh;
       }
   }
 
@@ -387,6 +393,17 @@ h2 {
 #about {
   color:white;
   align-items: center;
+}
+
+#intro {
+  background-color: aquamarine;
+  color: white;
+  width: auto;
+  height: auto;
+  margin: 5vh;
+  padding: 3%;
+  text-align: justify;
+  font-size: 6vh;
 }
 
 /* .dropbtn {
