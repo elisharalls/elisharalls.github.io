@@ -196,7 +196,8 @@ margin-left: 50%;
 margin-right: 50%;
 display: block;
 position: absolute;
-
+min-width: 10vh;
+max-width: 15vh;
 }
 
 /*    width: 820px;
