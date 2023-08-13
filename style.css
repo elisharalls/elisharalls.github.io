@@ -464,6 +464,7 @@ br {
 #message {
   background-color: #FFFACD;
   display: flex;
+   align-items: center;
 
 #message-submit important {
   background-color: none;
