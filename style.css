@@ -64,9 +64,11 @@
 #nav {
   background-color: white;
   text-align: center; 
-  height: 40px;
-  padding: 20px 30px 20px 30px;
-  
+  min-height: 6vh;
+  max-height: 8vh;
+  overflow: hidden;
+margin: auto;
+padding: auto;
   display: block;
   margin: 0;
 }
@@ -74,11 +76,13 @@
 @media only screen and (min-width: 768px)/*tablets*/ { 
   #nav {
     background-color: white;
-    height: 8vh;
+    min-height: 8vh;
+    max-height: 16vh;
     overflow: hidden;
     margin: auto;
-    padding: 10px 20px 10px 20px;
+    padding: auto;
     display: block;
+    text-align: right;
   }
 }  
 
@@ -106,21 +110,23 @@ a {
 
 /*MOBILE ONLY BURGER BAR*/
 @media only screen and (max-width: 768px) { /*moble*/
-.burger-menu {
+.bur-menu {
   width: 60px;
   height: 60px;
   padding: 1rem;
-  position: absolute;
+  overflow: hidden;
   cursor: pointer;
-  margin-left: 50%;
+  display: inline-block;
+  background-color: red;
 }
+
 .ham-bar {
   width: 50%;
   height: 3px;
-  background-color: aquamarine;
+  background-color: red;
   border-radius: 15px;
   display: inline-block;
-  position:inherit;
+  position:absolute;
   transform: translate(-50%, -50%);
   transition: transform .6s, opacity .8s, top .6s;
   top: 50%;
@@ -129,22 +135,22 @@ a {
 }
 
 .top {
-  top: 35%;
+  top: 25%;
 }
 .bottom {
-  top: 65%;
+  top: 75%;
 }
 
-.burger-menu.active .top {
+.bur-menu.active .top {
   transform: translate(-50%, -50%) rotate(-315deg);
   top: 50%;
 }
 
-.burger-menu.active .mid {
+.bur-menu.active .mid {
 opacity: 0;
 }
 
-.burger-menu.active .bottom {
+.bur-menu.active .bottom {
   transform: translate(-50%, -50%) rotate(-225deg);
   top: 50%;
 }
@@ -250,24 +256,22 @@ body {
   background-color: black;
 }
 /*<<<<GRID PATTERN>>>>*/
-@media only screen and (max-width: 768px)/*moble*/ { 
+@media only screen and (max-width: 655px)/*moble*/ { 
   .vgrid {
     border-left: solid 1px white;
-    height: 10%;
+    min-height: 12%;
     max-height: 25%;
-    min-height: 5%;
     margin-left: 2%;
     margin-right: 2%;
     position: absolute;
   }
   }
 
-@media only screen and (min-width: 768px) /*tablet?*/ { 
+@media only screen and (min-width: 655px) /*tablet?*/ { 
 .vgrid {
   border-left: solid 2px white;
-  height: 25%;
+  min-height: 20%;
   max-height: 30%;
-  
   margin-left: 2%;
   margin-right: 2%;
   position: absolute; 
@@ -318,7 +322,8 @@ h2 {
   letter-spacing: 0.2vh;
   position: relative;
   align-items: flex-end;
-  margin-top: 0;
+  margin-top: 1vh;
+  margin-bottom: -2vh;
 }
 
 #icon {
@@ -404,26 +409,44 @@ h2 {
   background-color: aquamarine;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 400;
-  color: white;
+  color: black;
   width: auto;
   height: auto;
   margin: 5vh;
   padding: 3%;
   text-align: left;
-  font-size: 6vh;
+  font-size: 12px;
 }
 
+@media only screen and (min-width: 992px) /*desktop*/{
+  #intro {
+    font-size: 6vh;
+  }
+}
+
+/*mobile*/
 #here {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 400;
-  color: white;
+  color: black;
+  width: auto;
+  height: auto;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 992px) /*desktop*/{
+#here {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  color: black;
   width: auto;
   height: auto;
   font-size: 6vh;
 }
+}
 
 #here:hover {
-  color: black;
+  color: white;
   text-decoration: line-through;
 }
 
