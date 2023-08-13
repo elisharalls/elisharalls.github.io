@@ -450,6 +450,47 @@ h2 {
   text-decoration: line-through;
 }
 
+br {
+  margin: 0 0 10px 0;
+}
+
+#main_inputs {
+  padding: 10px 10px;
+}
+
+#message-submit important {
+  background-color: none;
+  border: solid 3px #9BFAF0;
+  padding: 5px 10px;
+}
+
+input {
+  border: 0;
+  opacity: 70%;
+  text-align: left;
+  font-family: monospace;
+  background-color: rgb(217, 204, 255);
+}
+
+lable {
+  font-family: monospace;
+  color: gray;
+}
+
+a .hover {
+  color: #9BFAF0;
+  cursor: scroll;
+}
+
+a button .hover {
+  cursor: scroll;
+  background-color: red;
+}
+
+span {
+  margin-top: 30px;
+}
+
 /* .dropbtn {
   background-color: aquamarine;
   color: black;
