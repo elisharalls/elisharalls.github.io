@@ -450,13 +450,20 @@ h2 {
   text-decoration: line-through;
 }
 
+
+/*message box*/
+
 br {
   margin: 0 0 10px 0;
 }
 
 #main_inputs {
-  padding: 10px 10px;
+  padding: 20px 20px;
 }
+
+.message {
+  background-color: #FFFACD;
+  display: flex;
 
 #message-submit important {
   background-color: none;
