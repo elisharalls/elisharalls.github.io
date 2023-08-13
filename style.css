@@ -464,8 +464,10 @@ br {
 #messagebox .messagebox {
   background-color: #FFFACD;
   display: flex;
-   align-items: center;
-
+  align-items: center;
+  padding: 5px 10px;
+  margin: 0 0 10px;
+    }
 #message-submit important {
   background-color: none;
   border: solid 3px #9BFAF0;
