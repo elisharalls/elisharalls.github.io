@@ -184,6 +184,9 @@ opacity: 0;
     font-size: 4vh;
     border: none;
     background-color: white;
+    overflow: hidden;
+    text-align: center;
+    padding: 2px;
   }
 
   img .star {
